@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_about" tools:context="com.example.alis.proiect.About">
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="The app keeps a blacklist for calls/SMSs and blocks all the calls/SMSs that come from numbers from that list.The app has features such as blocking anonymous calls/SMSs and also blocking calls/SMSs that come from an unknown number(not in contacts) and block SMSs that have some content in them(user can specify what content/words must appear in an SMS in order to be blocked). The app keeps a history of what was blocked."
+        android:id="@+id/aboutView"
+        android:textSize="20dp"
+        android:layout_marginTop="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go back"
+        android:id="@+id/backButton"
+        android:layout_below="@+id/aboutView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:onClick="goBack" />
+</RelativeLayout>

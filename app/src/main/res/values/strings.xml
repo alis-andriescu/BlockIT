@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Proiect</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_number">AddNumber</string>
+    <string name="title_activity_instructions">Instructions</string>
+    <string name="title_activity_about">About</string>
+</resources>

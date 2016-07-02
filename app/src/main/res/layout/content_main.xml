@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:background="#FFFFFF">
+    >
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Add number to blacklist"
+        android:id="@+id/addNoMain"
+        android:onClick="onClickAddNumber"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/blockit"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Add word(s) to blacklist"
+        android:id="@+id/addWordMain"
+        android:onClick="onClickAddWord"
+        android:clickable="true"
+        android:layout_below="@+id/addNoMain"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="View history"
+        android:id="@+id/historyButton"
+        android:onClick="onClickViewHistory"
+        android:nestedScrollingEnabled="false"
+        android:layout_below="@+id/addWordMain"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Instructions"
+        android:id="@+id/instructionsButton"
+        android:onClick="onClickInstructions"
+        android:layout_below="@+id/historyButton"
+        android:layout_alignLeft="@+id/historyButton"
+        android:layout_alignStart="@+id/historyButton" />
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="About"
+        android:id="@+id/aboutButton"
+        android:layout_below="@+id/instructionsButton"
+        android:layout_alignLeft="@+id/instructionsButton"
+        android:layout_alignStart="@+id/instructionsButton"
+        android:onClick="onClickAbout"
+        android:nestedScrollingEnabled="false" />
+
+    <Button
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:text="Exit"
+        android:id="@+id/exitButton"
+        android:layout_below="@+id/aboutButton"
+        android:layout_alignLeft="@+id/aboutButton"
+        android:layout_alignStart="@+id/aboutButton"
+        android:onClick="onClickExit" />
+
+</RelativeLayout>
