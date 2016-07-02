@@ -1,4 +1,4 @@
 # BlockIT
 Android application that blocks unwanted calls/SMSs
 
-![My image](alis-andriescu.github.com/BlockIT/img/BlockIT.png)
+![My image](https://github.com/alis-andriescu/BlockIT/blob/master/img/BlockIT.png)
